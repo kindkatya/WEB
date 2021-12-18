@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('Задание 1' + '<br>')
+            let user = {
+                name: "Джон",
+                age: 30
+            };
+            document.write('name =' + user.name + '<br>')
+            document.write('age =' + user.age + '<br>')
+
+            user.sayHi = function() {
+                alert("Привет!");
+            };
+            user.sayHi(); // Привет!
+
+         document.write('<p>' + 'Задание 2' + '<br>')
+            let customer = {
+                name: 'Катерина',
+                surname: 'Киндрук',
+                age: 20,
+                adres: 'Москва',
+                phone: '89999999999',
+                product: 'True'
+            }
+            document.write('name =' + customer.name + '<br>')
+            document.write('surname =' + customer.surname + '<br>')
+            document.write('age =' + customer.age + '<br>')
+
+        document.write('<p>' + 'Задание 3' + '<br>')
+            let users = {
+                name: ['Катерина', 'Валерия', 'Ирина'],
+                surname: ['Киндрук', 'Попова', 'Кудинова'],
+                age: [20, 25, 30],
+                adres: ['Москва', 'Саранск', 'Волгоград']
+            }
+
+            var n = parseInt(prompt("Введите число от 0 до 2: "))
+            document.write('users.name = ' + users.name[n] + '<br>')
+
+            let orders = {
+                name: ['Чашка', 'Подушка'],
+                number: [2, 5],
+                id: [2034, 3324]
+            }
+            var n = parseInt(prompt("Введите число от 0 до 1: "))
+            document.write('orders.id = ' + orders.id[n] + '<br>')
+
+            let restorant = {
+                name: ['Якитория', 'ChicoRicko', 'Му-му', 'Шоколадница'],
+                worktime: ['10:00-22:00', '9:00-21:00', '8:00-21:00', '9:00-22:00'],
+                adres: ['Москва', 'Ижевск', 'Рязань', 'Тверь']
+            }
+            var n = parseInt(prompt("Введите число от 0 до 3: "))
+            document.write('restorant.worktime = ' + restorant.worktime[n] + '<br>')
+
+        document.write('<p>' + 'Задание 4' + '<br>')   
+
+            let nameee ={
+                name: ['Katya', 'Lera', 'Irina']
+            }
+
+            function NewUser(name) {
+                this.name= name;
+               }
+
+            let newus = new NewUser(nameee.name)
+            document.write('user.name = ' + newus.name + '<br>')
+
+
+        document.write('<p>' + 'Задание 5' + '<br>') 
+            function Student(name, age, form) {
+                this.name = name;
+                this.age = age;
+                this.form = form;
+            }
+
+        let student = new Student("Vasya", 12, 5)
+
+        document.write('name = ' + student.name + '<br>')
+        document.write('age = ' + student.age + '<br>')
+        document.write('form = ' + student.form + '<br>')
+
+    </script>
+    
+</body>
+</html>
